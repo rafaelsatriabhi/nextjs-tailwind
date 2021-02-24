@@ -9,9 +9,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0" width="device-width" />
       </Head>
       <header className="absolute px-4 py-5 lg:px-32 lg:py-16 z-50 flex flex-row justify-between items-center w-full">
-        <div className="w-auto flex-shrink-0">
-          <Image src="/assets/images/logo.svg" width="134px" height="35px" />
-        </div>
+        <img className="w-auto flex-shrink-0" src="/assets/images/logo.svg" />
         <div className="w-auto flex flex-row">
           <div className="hidden md:flex lg:flex flex-row">
             <div className="mx-3">
@@ -83,7 +81,7 @@ export default function Home() {
             <img src="/assets/images/decoration.jpg" className="hidden md:flex object-cover h-full w-full md:h-full rounded-3xl md:rounded-xl" />
           </div>
           <div className="relative md:row-span-2 md:col-span-3 flex justify-center">
-            <div className="absolute p-8 flex flex-col w-full h-full items-center">
+            <div className="absolute p-8 flex flex-col w-full h-full items-end">
               <h1 className="text-sm md:text-2xl">Bed Room</h1>
               <p className="text-xs md:text-lg">1.808 items</p>
             </div>
@@ -100,6 +98,54 @@ export default function Home() {
         </div>
       </section>
       {/* END: ROOMS SECTION */}
+      {/* START: JUST ARRIVED CAROUSEL */}
+      <section className="bg-blue-200 h-auto p-8">
+        <div className="flex flex-col items-center">
+          <h1>Just Arrived</h1>
+          <h1>This Summer For You</h1>
+        </div>
+        
+      </section>
+      {/* END: JUST ARRIVED CAROUSEL */}
+      <footer className="h-auto w-full p-8 flex flex-col items-center">
+        <img className="w-auto mb-5" src="/assets/images/logo.svg" />
+        <div className="flex flex-col md:flex-row justify-evenly w-full">
+          <div className="flex md:flex-col w-full justify-between">
+            <p className="font-semibold pb-1">Overview</p>
+            <img className="md:hidden" src="/assets/design/arrow-down.svg" />
+            <div className="hidden md:flex md:flex-col">
+              <p>Shipping</p>
+              <p>Refund</p>
+              <p>Promotion</p>
+            </div>
+          </div>
+          <div className="flex md:flex-col w-full justify-between">
+            <p className="font-semibold pb-1">Company</p>
+            <img className="md:hidden" src="/assets/design/arrow-down.svg" />
+            <div className="hidden md:flex md:flex-col">
+              <p>About</p>
+              <p>Career</p>
+              <p>Contact Us</p>
+            </div>
+          </div>
+          <div className="flex md:flex-col w-full justify-between">
+            <p className="font-semibold pb-1">Explore</p>
+            <img className="md:hidden" src="/assets/design/arrow-down.svg" />
+            <div className="hidden md:flex md:flex-col">
+              <p>Terms &amp; Cons</p>
+              <p>Privacy Policy</p>
+              <p>Refund</p>
+            </div>
+          </div>
+          <div className="flex flex-col w-full">
+            <p className="font-semibold pb-1">Special Letter</p>
+            <form className="flex flex-row w-full justify-between">
+              <input type="text" placeholder="Your email address" />
+              <img src="/assets/design/send-button.jpg" />
+            </form>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
