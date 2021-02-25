@@ -88,9 +88,9 @@ const Footer = ({ footer, footerHandler }) => {
                     </div>
                 </div>
                 {/* END: Footer - Explore Mobile */}
-                <div className="flex flex-col">
+                <div className="flex flex-col md:w-full">
                     <p className="font-semibold pb-1">Special Letter</p>
-                    <form className="md:w-1/2 flex flex-row w-auto">
+                    <form className="flex flex-row w-auto">
                     <input className="w-full rounded-l-lg pl-3" type="text" placeholder="Your email address" />
                     <img className="relative right-2 rounded-l-xl" src="/assets/design/send-button.svg" />
                     </form>

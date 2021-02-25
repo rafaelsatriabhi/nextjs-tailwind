@@ -20,7 +20,9 @@ const GreetingsSection = () => {
           Exlpore Now
         </button>
         </div>
-        <img className="object-cover h-96 w-full md:w-1/2" src="/assets/images/furnitures-and-plants.jpg" />          
+        <img className="object-cover h-96 w-full md:w-1/2" src="/assets/images/furnitures-and-plants.jpg" />   
+        <div className="absolute right-0 bg-black bg-opacity-25 h-96 w-full md:w-1/2"></div>       
+        <img src="/assets/design/btn-play.svg" className="absolute z-30 right-0 bg-black bg-opacity-25 h-6 md:w-1/2"></img>       
       </section>
     )
 }
