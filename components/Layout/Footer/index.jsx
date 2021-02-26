@@ -1,10 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-const Footer = ({ footer, footerHandler }) => {
+const Footer = () => {
+
+    const [footer, setFooter] = useState({
+        overview: false,
+        company: false,
+        explore: false,
+      })
+      const footerHandler = (e) => {
+        const id = e.target.id
+    
+        if (id === 'footer-overview') {
+          if( footer.overview ) {
+            setFooter({...footer, overview: false })
+          } else {
+            setFooter({...footer, overview: true })
+    
+          }
+        } else if (id === 'footer-company') {
+          if( footer.company ) {
+            setFooter({...footer, company: false })
+          } else {
+            setFooter({...footer, company: true })
+    
+          }
+        } else {
+          if( footer.explore ) {
+            setFooter({...footer, explore: false })
+          } else {
+            setFooter({...footer, explore: true })
+    
+          }
+        }
+      }
+
     return (
         <>
         {/* START: FOOTER */}
-            <footer className="h-auto w-full p-8 flex flex-col items-center bg-gray-100">
+            <footer className="h-auto w-full p-8 flex flex-col items-center border-t-1 border-black-200">
                 <img className="w-auto mb-5" src="/assets/images/logo.svg" />
                 <div className="flex flex-col md:flex-row justify-evenly w-full">
                 {/* START: Footer - Overview Mobile */}
