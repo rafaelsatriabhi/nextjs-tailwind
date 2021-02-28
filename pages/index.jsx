@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Layout from '../components/Layout/Layout.jsx';
-import ModalMenu from '../components/Layout/Pages/Home/Modal/index.jsx';
 import GreetingsSection from '../components/Layout/Pages/Home/Sections/GreetingsSection/index.jsx';
 import NewArrival from '../components/Layout/Pages/Home/Sections/NewArrival/index.jsx';
 import PartnersLogoSection from '../components/Layout/Pages/Home/Sections/PartnersLogoSection/index.jsx';
