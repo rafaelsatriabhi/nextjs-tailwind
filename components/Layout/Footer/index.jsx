@@ -37,7 +37,7 @@ const Footer = () => {
     return (
         <>
         {/* START: FOOTER */}
-            <footer className="h-auto w-full p-8 flex flex-col items-center border-t-1 border-black-200">
+            <footer className="h-auto w-full p-8 flex flex-col items-center border-t-1 border-black-200 lg:mx-36">
                 <img className="w-auto mb-5" src="/assets/images/logo.svg" />
                 <div className="flex flex-col md:flex-row justify-evenly w-full">
                 {/* START: Footer - Overview Mobile */}

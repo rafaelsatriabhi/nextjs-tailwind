@@ -13,7 +13,7 @@ const NewArrival = () => {
 							<p className="font-semibold">Cangkir Mauttie</p>
 							<p>IDR 89.300.000</p>
 						</div>
-						<Link href="/productpage">
+						<Link href="/office-room/details">
 							<div role="button" className="flex-shrink-0 inline-block h-auto mx-4">
 								<img className="rounded-3xl h-auto" src="/assets/images/bankyu-minimax.jpg" />
 								<p className="font-semibold">Bankyu Minimax</p>
